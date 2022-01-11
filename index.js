@@ -60,8 +60,8 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-  /*add your code here*/
+function multiply(a,b){
+  return a*b;
 }
 
 
@@ -76,8 +76,8 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(age){
+return age+7;
 }
 
 
@@ -109,9 +109,41 @@ Puppies less than 1 year
 NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
+function hungryDog(weight, age){
+  if(age < 1){
+
+    if( age <=.33){
+      return weight * 0.1;
+    }
+    else if ( age > .33 && age <= .58){
+      return weight * 0.05;
+    }
+    else if( age > .58 && age < 1)
+    { 
+      return weight * 0.04
+    }
+  }
+
+  else {
+
+    if(weight <= 5){
+      return weight * .05;
+    }
+    else if( weight > 5 && weight <= 10)
+    {return weight * .04;
+
+    }
+
+    else if ( weight > 10 && weight <= 15)
+    {
+      return weight * .03;
+    }
+    else if( weight > 15){
+      return weight * .02;
+    }
+  }
 }
+
 
 
 
