@@ -233,7 +233,7 @@ Using the miles function below do the following:
 */
 
 function miles(kiloMeter){
-  return kiloMeter * 0.62137
+  return kiloMeter * 0.62137;
 }
 
 
@@ -246,8 +246,8 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet(centiMeter){
+  return centiMeter * 0.0328084;
 }
 
 
