@@ -232,8 +232,8 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles(kiloMeter){
+  return kiloMeter * 0.62137
 }
 
 
