@@ -61,9 +61,8 @@ Do the following:
 */
 
 function multiply(a,b){
-  return a*b;
+  return a * b;
 }
-
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -77,7 +76,7 @@ Do the following:
 */
 
 function dogYears(age){
-return age+7;
+return age * 7;
 }
 
 
@@ -170,13 +169,13 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 let computer = Math.random();
-if(computer === 0){
-return 'scissors'
-}
-else if( computer >0 && <1){
-  return ' papers'
-}
-else { return 'rocks'}
+// if(computer === 0){
+// return 'scissors'
+// }
+// else if( computer >0 && <1){
+//   return ' papers'
+// }
+// else { return 'rocks'}
 
 function game(user, computer){
 // user <1 is scissor; 1 is paper; >1 rock
@@ -265,8 +264,9 @@ Using the annoyingSong function below do the following:
 function annoyingSong(num1){
 
   let annoyingSong =[ 'Let', 'Sing', '99', 'Bottles', 'of', 'Soda', 'on', 'the', 'Wall']
-      for(num1< annoyingSong.length; num1++){
-        return annoyingSong[i];
+      for(let num1 = 0; num1 < annoyingSong.length; num1++)
+      {
+        return annoyingSong[num1];
       }
 }
 
@@ -287,16 +287,16 @@ Using the grade function below do the following:
 */
 
 function grade(num){
-if (num >= 90 && <= 100){
+if (num >= 90 && num <= 100){
   return ' you got an A';
 }
-else if (num >=80 && <= 89){
+else if (num >=80 && num <= 89){
   return ' you got a B';
 }
-else if ( num >=70 && <=79){
+else if ( num >=70 && num <=79){
   return ' you got a C';
 }
-else if ( num >= 60 && <=69){
+else if ( num >= 60 && num <=69){
   return 'you got a D';
 }
 else if (num < 60){
